@@ -1,0 +1,11 @@
+{% extends 'pa/base.html' %}
+
+{% block content %}
+    <h1>Personal Assistant Home!</h1>
+    {% for post in posts %}
+    <h3>{{ post.question }}</h3>
+    <h3>{{ post.answer }}</h3>
+    <h3>{{ post.author }}</h3>
+    <h3>{{ post.date_asked }}</h3>
+    {% endfor %}
+{% endblock %}
